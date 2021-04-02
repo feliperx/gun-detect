@@ -15,7 +15,7 @@ def opcao_entrada() :
 Escolha a entrada que sera analisada: ''')  
     
         if opcao == '1': 
-            camera = cv2.VideoCapture('/home/felipex/Documentos/UERR_CC/Inteligência Artificial_2020.1/source/gun-detect/data/gun4_2.mp4')
+            camera = cv2.VideoCapture('./data/gun4_2.mp4')
             return camera
             break
         elif opcao == '2': 
@@ -28,7 +28,7 @@ Escolha a entrada que sera analisada: ''')
 camera = opcao_entrada() 
 
 #carregando o modelo para deteccao de arma
-gun_cascade = cv2.CascadeClassifier('/home/felipex/Documentos/UERR_CC/Inteligência Artificial_2020.1/source/gun-detect/cascade.xml')
+gun_cascade = cv2.CascadeClassifier('./cascade.xml')
 
 #inicializa o primeiro frame
 firstFrame = None
