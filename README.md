@@ -4,7 +4,7 @@
 Application for detecting guns in stored video or webcam in real time.
 
 ### DataBase:
-. video data; 
+- video data; 
 - cascade data (trained model);
 
 ### Libraries used: 
